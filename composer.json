@@ -1,0 +1,33 @@
+{
+    "name": "doeanderson/redirect-trailing-slash",
+    "description": "Middleware to automatically redirect URLs that end with a slash",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kenton Glass",
+            "email": "kglass@doeanderson.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DoeAnderson\\RedirectTrailingSlash\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "DoeAnderson\\RedirectTrailingSlash\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DoeAnderson\\RedirectTrailingSlash\\RedirectTrailingSlashServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
